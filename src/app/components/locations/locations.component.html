@@ -1,0 +1,36 @@
+
+<div class="container">
+  <div class="form-group"></div>
+    <br>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+        </div>
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="row">
+        <div class="col">
+            <ul class="list-group">
+                <li class="list-group-item" *ngFor="let region of firstFive"
+                    (click)="imagesFromLocation(region.display)">
+                    {{region.display}}
+                </li>
+            </ul>
+        </div>
+
+        <div class="col">
+            <ul class="list-group">
+                <li class="list-group-item" (click)="imagesFromLocation(five.display)" *ngFor="let five of secondFive">{{ five.display }}</li>
+            </ul>
+        </div>
+
+        <div class="w-100"></div>
+
+    </div>
+
+</div>

@@ -1,0 +1,37 @@
+
+<div class="row mb-2 mt-5">
+    <div class="col-sm-6">
+
+        <img src="https://farm{{singlePhoto?.farm}}.staticflickr.com/{{singlePhoto?.server}}/{{singlePhoto?.id}}_{{singlePhoto?.secret}}.jpg" class="img-fluid" alt="Responsive image">
+
+    </div>
+
+    <div class="col-sm-6 -offset-sm-1">
+        <ul class="list-group">
+            <li class="list-group-item">
+                <b>Image Owner</b> :: {{ singlePhoto?.owner.realname }}, <i> {{ singlePhoto?.location.country._content }}, {{  singlePhoto?.location.locality._content }} </i>
+            </li>
+            <li class="list-group-item"> <b>Image Name</b> :: {{ singlePhoto?.title._content }} </li>
+            <li class="list-group-item"> <b>Image Uploaded</b> :: {{ singlePhoto?.dates.taken | date:'dd LLL yyyy' }} </li>
+            <li class="list-group-item"> <b>Image Views</b> :: {{ singlePhoto?.views | number }} </li>
+            <li class="list-group-item"> <b>Image Description</b> :: {{ singlePhoto?.description._content }} </li>
+        </ul>
+
+        <div class="card mt-3">
+            <div class="card-header">
+                <b>Image Tags</b>
+            </div>
+            <ul class="list-group list-group-flush" *ngFor="let tag of singlePhoto?.tags?.tag">
+                <li class="list-group-item"> {{ tag.raw }} </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-4 mb-5">
+    <div class="col-sm-12">
+        <p>
+
+        </p>
+    </div>
+</div>
