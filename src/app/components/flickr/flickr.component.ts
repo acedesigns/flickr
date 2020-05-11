@@ -31,6 +31,7 @@ export class FlickrComponent implements OnInit {
 
     constructor( private activeRoute: ActivatedRoute, private service: FlickrService, private router: Router) {}
 
+
     ngOnInit() {
         this.location = this.activeRoute.snapshot.params['location'];
 
@@ -60,6 +61,5 @@ export class FlickrComponent implements OnInit {
             }
         });
     }
-
 
 }

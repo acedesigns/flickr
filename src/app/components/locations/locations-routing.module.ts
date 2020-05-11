@@ -25,6 +25,4 @@ const routes: Routes = [
 
     exports: [ RouterModule,  ]
 })
-export class LocationsRoutingModule {
-
-}
+export class LocationsRoutingModule {}

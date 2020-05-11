@@ -30,7 +30,6 @@ export class SingleComponent implements OnInit {
 
         this.service.getSinglePhotoInfo(this.photoID).subscribe(
             value => {
-                console.log(value);
                 this.singlePhoto = value;
             });
     }

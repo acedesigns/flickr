@@ -24,6 +24,4 @@ import { FlickrService } from '../../services/flickr/flickr.service';
 
     providers : [ FlickrService ]
 })
-export class SingleModule {
-
-}
+export class SingleModule {}

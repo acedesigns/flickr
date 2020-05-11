@@ -52,7 +52,7 @@ export class LocationsComponent implements OnInit {
     }
 
 
-    imagesFromLocation(location) {
+    imagesFromLocation(location: string) {
         this.router.navigate(['/location', location.toLowerCase()]);
     }
 

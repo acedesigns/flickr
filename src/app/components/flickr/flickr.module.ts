@@ -23,6 +23,5 @@ import { FlickrService } from '../../services/flickr/flickr.service';
 
     providers : [ FlickrService ]
 })
-export class FlickrModule {
+export class FlickrModule {}
 
-}

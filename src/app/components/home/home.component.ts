@@ -22,7 +22,7 @@ declare var google: any;
 })
 export class HomeComponent implements OnInit {
 
-    photos: Object;
+    photos: number;
     loading = true;
     map: any;
 
